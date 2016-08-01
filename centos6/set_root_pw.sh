@@ -10,6 +10,8 @@ _word=$( [ ${ROOT_PASS} ] && echo "preset" || echo "random" )
 echo "=> Setting a ${_word} password to the root user"
 echo "root:$PASS" | chpasswd
 
+PASS=Root@1234
+
 echo "=> Done!"
 touch /.root_pw_set
 
